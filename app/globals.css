@@ -19,6 +19,9 @@
     --foreground:#ededed;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: 'Abel', sans-serif !important;

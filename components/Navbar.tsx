@@ -16,7 +16,7 @@ function Navbar() {
     setNav(!nav)
   }
   return (
-    <header className="absolute top-0 left-0 w-full z-10 bg-transparent text-white z-50">
+    <header className="absolute top-0 left-0 w-full bg-transparent text-white z-50">
     <nav className='border px-12 py-7 md:px-40 md:py-8 border-none text-white'>
       <div className='z-40 flex justify-between items-center h-10 w-full'>
         <div>
@@ -27,7 +27,7 @@ function Navbar() {
           <li key={index} className="text-md font-serif font-extralight">
             <Link 
               href={item.href} 
-              className="border-b-2 border-transparent transition-all duration-200 ease-in-out hover:border-[#7393B3] uppercase"
+              className="hover:scale-105 transition-all duration-200 ease-in-out uppercase"
             >
               {item.name}
             </Link>
@@ -45,9 +45,9 @@ function Navbar() {
           className="md:hidden"
         >
           {!nav ? (
-            <MdOutlineSegment className="text-3xl hover:text-[#808080]" />
+            <MdOutlineSegment className="text-3xl hover:scale-103 active:text-[#808080] transition-all duration-150" />
           ) : (
-            <TfiClose className="text-xl hover:text-[#808080]" />
+            <TfiClose className="text-xl active:text-[#808080]" />
           )}
         </motion.div>
       </AnimatePresence>
@@ -62,7 +62,7 @@ function Navbar() {
       animate='enter'
       exit='exit'
       className="z-100 absolute top-0 right-0  w-[60%] flex items-center p-16 h-[100vh] bg-[#2c2c2c]">
-        <TfiClose className="text-xl absolute left-12 top-10 hover:rotate-90 transition-all duration-500" onClick={handleNav}/>
+        <TfiClose className="text-xl absolute left-12 top-10 active:rotate-180 transition-all duration-500" onClick={handleNav}/>
         <ul
         className='flex flex-col h-[350px] justify-around w-full'>
           {navItems.map((item,index)=>(
