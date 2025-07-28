@@ -46,9 +46,9 @@ function About() {
         </div>
 
         {/* Image Section */}
-        <div className="relative w-[400px] max-w-md mx-auto group cursor-pointer">
+        <div className="relative w-[320px] lg:w-[400px] max-w-md mx-auto group cursor-pointer">
         {/* Shadow Layer */}
-        <div className="absolute top-0 left-0 w-[400px] h-full translate-x-7 translate-y-7 rounded-sm overflow-hidden shadow-md bg-[#533e3e] z-0 transition-all duration-500"></div>
+        <div className="absolute top-0 left-0 w-[320px] lg:w-[400px] h-full translate-x-5 translate-y-5 rounded-sm overflow-hidden shadow-md bg-[#533e3e] z-0 transition-all duration-500"></div>
 
         {/* Main Image */}
         <div className="relative z-10 rounded-sm overflow-hidden shadow-xl">
