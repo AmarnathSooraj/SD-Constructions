@@ -35,7 +35,7 @@ function About() {
           <h2 className="text-4xl md:text-5xl font-serif text-[#2f1801] my-3 leading-tight">
             SD CONSTRUCTIONS
           </h2>
-          <p className="text-gray-700 font-[Abel] text-lg leading-relaxed text-justify">
+          <p className="text-gray-700 font-abel text-lg leading-relaxed text-justify">
             Our Home — where laughter echoes and we find rest after each day.
             From the outside, it may look like bricks and mortar topped with tiles, just like any other house.
             But step inside, and you’ll feel something different — a calm that lets the lungs breathe deeper
