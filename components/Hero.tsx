@@ -46,7 +46,7 @@ function Hero() {
           />
           <div className="absolute top-[50vh] place-self-center z-40 text-center text-white max-w-[700px] font-[Poppins]">
             <h1 className='text-xl mb-2 md:mb-3'>SD CONSTRUCTIONS</h1>
-            <p className="text-3xl  leading-9 lg:leading-12 font-serif md:text-5xl ">{item.text}</p>
+            <p className="text-3xl  leading-9 lg:leading-12 font-serif lg:text-5xl ">{item.text}</p>
           </div>
         </div>
       ))}

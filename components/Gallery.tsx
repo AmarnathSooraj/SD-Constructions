@@ -4,27 +4,27 @@ import Image from 'next/image';
 const galleryItems = [
   {
     title: 'Residential Building',
-    src: '/images/project1.jpg',
+    src: '/selectedphotos/1.webp',
   },
   {
     title: 'Commercial Tower',
-    src: '/images/project2.jpg',
+    src: '/selectedphotos/2.webp',
   },
   {
     title: 'Bridge Construction',
-    src: '/images/project3.jpg',
+    src: '/selectedphotos/3.webp',
   },
   {
     title: 'Road Infrastructure',
-    src: '/images/project4.jpg',
+    src: '/selectedphotos/4.webp',
   },
   {
     title: 'Industrial Plant',
-    src: '/images/project5.jpg',
+    src: '/selectedphotos/5.webp',
   },
   {
     title: 'Renovation Work',
-    src: '/images/project6.jpg',
+    src: '/selectedphotos/6.webp',
   },
 ];
 
@@ -33,7 +33,7 @@ export default function Gallery() {
     <section className="w-full mx-auto py-20 bg-[#f9f9f2] text-black">
       <div className="max-w-[1200px] mx-auto px-4">
         <div className='text-center max-w-[750px] mx-auto mb-14 text-gray-600'>
-            <h2 className="text-4xl md:text-5xl font-extralight font-serif mb-3 text-gray-900">Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-extralight font-serif mb-3 text-gray-900">Projects</h2>
             <p className='text-center'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam odio commodi velit excepturi dolor reprehenderit quasi iusto veritatis eligendi porro ratione blanditiis, sequi, voluptatum quidem. Beatae vitae hic quae magnam!</p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -44,10 +44,10 @@ export default function Gallery() {
                 alt={item.title}
                 width={600}
                 height={400}
-                className="object-cover w-full h-60 transition-transform duration-300 group-hover:scale-105"
+                className="object-cover w-full h-60 transition-transform duration-300 group-hover:scale-100"
               />
-              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
-                <p className="text-white text-lg font-semibold">{item.title}</p>
+              <div className="absolute inset-0 bg-[#3f3f3f] bg-opacity-100 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+                <p className="text-white text-lg font-medium">{item.title}</p>
               </div>
             </div>
           ))}

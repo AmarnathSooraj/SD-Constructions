@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { FaHardHat, FaRegClock, FaHandsHelping, FaDraftingCompass } from 'react-icons/fa'
-
+import Link from 'next/link'
 function About() {
   const items = [
     {
@@ -27,12 +27,12 @@ function About() {
   ]
   return (
     <section className="w-full bg-[#f9f6f2]">
-      <div className="max-w-7xl px-5 py-20 mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
+      <div className="max-w-7xl px-5 pt-20 pb-10 mx-auto flex flex-col-reverse lg:flex-row items-center gap-12">
 
         {/* Text Content */}
         <div className="flex-1 text-start">
           <p className="text-[#7b7b7b] text-lg font-medium mb-2 tracking-wide">ABOUT US</p>
-          <h2 className="text-4xl md:text-5xl font-serif text-[#2f1801] mb-6 leading-tight">
+          <h2 className="text-4xl md:text-5xl font-serif text-[#2f1801] my-3 leading-tight">
             SD CONSTRUCTIONS
           </h2>
           <p className="text-gray-700 font-[Abel] text-lg leading-relaxed text-justify">
@@ -42,6 +42,7 @@ function About() {
             and the heart beat a little steadier.At <span className="text-[#456546] font-medium">SD Constructions</span>, we believe a home is more than a structure; it’s a space that reflects your story,
             your values, and your way of life. Every detail is carefully crafted to bring comfort, style, and functionality together.
           </p>
+          <Link href='/' className='text-sm font-extralight my-2 inline-block bg-[#2f1414] p-2 rounded-sm text-white hover:scale-3d'>Read More</Link>
         </div>
 
         {/* Image Section */}
@@ -63,7 +64,7 @@ function About() {
 
       </div>
       <div className="max-w-full text-center mt-10 bg-[#212020] py-15 px-5 text-[#d7d6d6]">
-        <h2 className="text-3xl md:text-5xl mb-4 font-extralight font-serif">Our Specialities</h2>
+        <h2 className="text-3xl md:text-4xl mb-4 font-extralight font-serif">Our Specialities</h2>
         <p className=" mb-12 max-w-2xl mx-auto">
           What sets us apart is not just what we build — it’s how we build it. Here’s what makes SD Constructions trusted by so many families.
         </p>

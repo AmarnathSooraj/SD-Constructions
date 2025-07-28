@@ -24,7 +24,7 @@ function Navbar() {
       </div>
       <ul className='hidden md:flex w-[530px] justify-between'>
         {navItems.map((item,index)=>(
-          <li key={index} className="text-lg font-medium ">
+          <li key={index} className="text-md font-serif font-extralight">
             <Link 
               href={item.href} 
               className="border-b-2 border-transparent transition-all duration-200 ease-in-out hover:border-[#7393B3] uppercase"
@@ -64,7 +64,7 @@ function Navbar() {
       className="z-100 absolute top-0 right-0  w-[60%] flex items-center p-16 h-[100vh] bg-[#2c2c2c]">
         <TfiClose className="text-xl absolute left-12 top-10 hover:rotate-90 transition-all duration-500" onClick={handleNav}/>
         <ul
-        className='flex flex-col h-[300] justify-around w-full'>
+        className='flex flex-col h-[350px] justify-around w-full'>
           {navItems.map((item,index)=>(
           <motion.li
           variants={slide}
