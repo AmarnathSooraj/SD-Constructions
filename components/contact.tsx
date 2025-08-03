@@ -28,8 +28,8 @@ function Contact() {
 
   return (
     <section className="w-full mx-auto py-10 bg-[#f0f0e3]">
-      <h1 className="text-center mb-2 text-4xl font-serif text-gray-900">Contact Us</h1>
-      <p className="text-center text-lg text-gray-600 max-w-md mx-auto mb-8">
+      <h1 className="text-center mb-2 text-3xl font-serif text-gray-900 md:text-4xl">Contact Us</h1>
+      <p className="text-center text-md text-gray-600 max-w-md mx-auto mb-8 leading-5">
         We'd love to hear from you! Fill out the form and we’ll get back to you as soon as possible.
       </p>
       <div className="max-w-[1200px] mt-10 mx-auto px-4 flex flex-col lg:flex-row items-start justify-between gap-8">
@@ -46,37 +46,37 @@ function Contact() {
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Name"
             value={formData.name}
             onChange={handleChange}
             required
-            className="border border-gray-400 p-3 rounded"
+            className="border border-gray-400 p-3 rounded focus:outline-none"
           />
           <input
             type="email"
             name="email"
-            placeholder="Your Email"
+            placeholder="Email"
             value={formData.email}
             onChange={handleChange}
             required
-            className="border border-gray-400 p-3 rounded"
+            className="border border-gray-400 p-3 rounded focus:outline-none"
           />
           <input
             type="tel"
             name="phone"
-            placeholder="Your Phone"
+            placeholder="Phone"
             value={formData.phone}
             onChange={handleChange}
-            className="border border-gray-400 p-3 rounded"
+            className="border border-gray-400 p-3 rounded focus:outline-none"
           />
           <textarea
             name="message"
-            placeholder="Your Message"
+            placeholder="Message"
             rows={4}
             value={formData.message}
             onChange={handleChange}
             required
-            className="border border-gray-400 p-3 rounded"
+            className="border border-gray-400 p-3 rounded focus:outline-none"
           />
           <button
             type="submit"

@@ -33,7 +33,7 @@ function About() {
         <div className="flex-1 text-start">
           <p className="text-[#7b7b7b] text-lg font-medium mb-2 tracking-wide">ABOUT US</p>
           <h2 className="text-4xl md:text-5xl font-serif text-[#2f1801] my-3 leading-tight">
-            SD CONSTRUCTIONS
+            Design Architects'n' Engineers
           </h2>
           <p className="text-gray-700 font-abel text-lg leading-relaxed text-justify">
             Our Home — where laughter echoes and we find rest after each day.
@@ -42,7 +42,7 @@ function About() {
             and the heart beat a little steadier.At <span className="text-[#456546] font-medium">SD Constructions</span>, we believe a home is more than a structure; it’s a space that reflects your story,
             your values, and your way of life. Every detail is carefully crafted to bring comfort, style, and functionality together.
           </p>
-          <Link href='/' className='text-sm font-extralight my-2 inline-block bg-[#2f1414] p-2 rounded-sm text-white hover:scale-105 active:bg-[#533e3e] transition-all duration-200'>Read More</Link>
+          <Link href='/about' className='text-sm font-extralight my-2 inline-block bg-[#2f1414] p-2 rounded-sm text-white hover:scale-105 active:bg-[#533e3e] transition-all duration-200'>Read More</Link>
         </div>
 
         {/* Image Section */}

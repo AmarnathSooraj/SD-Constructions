@@ -11,7 +11,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="w-full px-5 bg-[#191919] text-white py-12">
+    <footer className="w-full px-5 bg-[#2c2c2c] text-white py-12">
       <div className="flex flex-col items-center justify-center max-w-7xl  mx-auto">
         <div className="flex flex-col md:flex-row w-full gap-5">
           <div className="flex justify-center md:justify-start w-full py-3">
