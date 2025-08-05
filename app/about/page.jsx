@@ -1,22 +1,29 @@
+'use client'
 import Image from 'next/image';
 import Navbar from '@/components/Navbar';
+import {motion} from 'framer-motion'
 
 export default function AboutPage() {
   return (
     <>
       <Navbar nonSticky />
-      <main className="min-h-screen bg-white text-gray-900 px-6 md:px-20 py-12">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.55 }}
+       className="min-h-screen bg-white text-gray-900 px-6 md:px-20 py-12">
         <div className="max-w-5xl mx-auto">
           <div className="flex flex-col items-center justify-center gap-10">
             {/* Profile Section */}
           <div className="relative inline-block text-center">
             <div className="relative w-[200px] h-[200px] mx-auto">
               <Image
-                src="/sahya.jpg"
+                src="/sahyadeepak.jpg"
                 alt="Profile photo"
                 width={180}
                 height={180}
-                className="rounded-sm shadow-md object-cover w-full h-full"
+                className="rounded-sm shadow-lg object-cover w-full h-full brightness-90"
               />
             </div>
 
@@ -37,7 +44,7 @@ export default function AboutPage() {
             </div>
           </div>
         </div>
-      </main>
+      </motion.div>
     </>
   );
 }

@@ -33,13 +33,13 @@ function About() {
         <div className="flex-1 text-start">
           <p className="text-[#7b7b7b] text-lg font-medium mb-2 tracking-wide">ABOUT US</p>
           <h2 className="text-4xl md:text-5xl font-serif text-[#2f1801] my-3 leading-tight">
-            Design Architects'n' Engineers
+            Sahyadri Ventures
           </h2>
           <p className="text-gray-700 font-abel text-lg leading-relaxed text-justify">
             Our Home — where laughter echoes and we find rest after each day.
             From the outside, it may look like bricks and mortar topped with tiles, just like any other house.
             But step inside, and you’ll feel something different — a calm that lets the lungs breathe deeper
-            and the heart beat a little steadier.At <span className="text-[#456546] font-medium">SD Constructions</span>, we believe a home is more than a structure; it’s a space that reflects your story,
+            and the heart beat a little steadier.At <span className="text-[#456546] font-medium">Sahyadri Ventures</span>, we believe a home is more than a structure; it’s a space that reflects your story,
             your values, and your way of life. Every detail is carefully crafted to bring comfort, style, and functionality together.
           </p>
           <Link href='/about' className='text-sm font-extralight my-2 inline-block bg-[#2f1414] p-2 rounded-sm text-white hover:scale-105 active:bg-[#533e3e] transition-all duration-200'>Read More</Link>
@@ -66,7 +66,7 @@ function About() {
       <div className="max-w-full text-center mt-10 bg-[#212020] py-15 px-5 text-[#d7d6d6]">
         <h2 className="text-3xl md:text-4xl mb-4 font-extralight font-serif">Our Specialities</h2>
         <p className=" mb-12 max-w-2xl mx-auto">
-          What sets us apart is not just what we build — it’s how we build it. Here’s what makes SD Constructions trusted by so many families.
+          What sets us apart is not just what we build — it’s how we build it. Here’s what makes Sahyadri Ventures trusted by so many families.
         </p>
 
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">

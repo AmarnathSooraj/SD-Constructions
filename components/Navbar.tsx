@@ -55,19 +55,20 @@ function Navbar({ nonSticky = false }) {
       ? 'fixed bg-[#2c2c2c] shadow-md'
       : 'absolute bg-transparent'
   } top-0 left-0 w-full z-50 text-white transition-all duration-300`;
-
+   console.log(navItems[0].href.charAt(1))
   return (
     <header className={headerClasses}>
-      <nav className='border px-6 py-6 lg:px-50 md:py-6 border-none text-white'>
+      <nav className='border px-6 py-6 lg:px-30 md:py-6 border-none text-white'>
         <div className='z-40 flex justify-between items-center h-10 w-full'>
           <div>
             <Image src={logo} width={80} height={80} alt='logoimage' />
           </div>
 
           {/* Desktop Nav */}
-          <ul className='hidden md:flex w-[530px] justify-between'>
+          <ul className='hidden lg:flex w-[950px] justify-between font-light font-serif'>
             {navItems.map((item, index) => (
-              <li key={index} className="text-md font-extralight">
+              <li key={index} className="text-sm mx-1 ">
+                {item.href.charAt(1)==='#'?
                 <a
                   href={item.href}
                   className={`hover:scale-105 transition-all duration-200 ease-in-out uppercase ${
@@ -75,7 +76,16 @@ function Navbar({ nonSticky = false }) {
                   }`}
                 >
                   {item.name}
-                </a>
+                </a>:
+                <Link
+                  href={item.href}
+                  className={`hover:scale-105 transition-all duration-200 ease-in-out uppercase ${
+                    item.href === `#${activeSection}` ? 'text-yellow-200' : ''
+                  }`}
+                >
+                  {item.name}
+                </Link>
+                }
               </li>
             ))}
           </ul>
@@ -89,7 +99,7 @@ function Navbar({ nonSticky = false }) {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.35 }}
               onClick={handleNav}
-              className="md:hidden"
+              className="lg:hidden"
             >
               {!nav ? (
                 <MdOutlineSegment className="text-3xl hover:scale-105 transition-all duration-150" />
@@ -109,10 +119,10 @@ function Navbar({ nonSticky = false }) {
             initial='initial'
             animate='enter'
             exit='exit'
-            className="z-[100] fixed top-0 right-0 w-[60%] flex items-center p-16 h-[100vh] bg-[#2c2c2c]"
+            className="z-[100] fixed top-0 right-0 w-[60%] flex items-center p-12 h-[100vh] bg-[#2c2c2c]"
           >
             <TfiClose className="text-xl absolute left-12 top-10 active:rotate-180 transition-all duration-500" onClick={handleNav} />
-            <ul className='flex flex-col h-[350px] justify-around w-full'>
+            <ul className='flex flex-col h-[400px] justify-around w-full font-serif text-md'>
               {navItems.map((item, index) => (
                 <motion.li
                   variants={slide}
@@ -120,17 +130,25 @@ function Navbar({ nonSticky = false }) {
                   animate='enter'
                   exit='exit'
                   key={index}
-                  className='text-lg'
                 >
-                  <a
-                    href={item.href}
-                    onClick={() => setNav(false)} // ✅ Close mobile nav on click
-                    className={`hover:text-yellow-200 ${
-                      item.href === `#${activeSection}` ? 'text-yellow-200' : ''
-                    }`}
-                  >
-                    {item.name.toUpperCase()}
-                  </a>
+                 {item.href.charAt(1)==='#'?
+                <a
+                  href={item.href}
+                  className={`hover:scale-105 transition-all duration-200 ease-in-out uppercase ${
+                    item.href === `#${activeSection}` ? 'text-yellow-200' : ''
+                  }`}
+                >
+                  {item.name}
+                </a>:
+                <Link
+                  href={item.href}
+                  className={`hover:scale-105 transition-all duration-200 ease-in-out uppercase ${
+                    item.href === `#${activeSection}` ? 'text-yellow-200' : ''
+                  }`}
+                >
+                  {item.name}
+                </Link>
+                }
                 </motion.li>
               ))}
             </ul>
