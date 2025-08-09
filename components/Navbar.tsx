@@ -58,7 +58,7 @@ function Navbar({ nonSticky = false }) {
    console.log(navItems[0].href.charAt(1))
   return (
     <header className={headerClasses}>
-      <nav className='border px-6 py-6 lg:px-30 md:py-6 border-none text-white'>
+      <nav className='border px-6 py-8 lg:px-30 md:py-6 border-none text-white'>
         <div className='z-40 flex justify-between items-center h-10 w-full'>
           <div>
             <Image src={logo} width={80} height={80} alt='logoimage' />

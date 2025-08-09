@@ -7,6 +7,7 @@ import About from "@/components/About";
 import Footer from "@/components/Footer";
 import Contact from "@/components/contact";
 import Gallery from "@/components/Gallery";
+import Testimonals from '@/components/Testimonals';
 import Image from 'next/image';
 import { MdArrowDropUp } from "react-icons/md";
 
@@ -55,6 +56,7 @@ export default function Home() {
     <Navbar/>
     <section id="hero"><Hero /></section>
     <section id="about"><About /></section>
+    <section id="testimonals"><Testimonals/></section>
     <section id="gallery"><Gallery /></section>
     <section id="contact"><Contact /></section>
 

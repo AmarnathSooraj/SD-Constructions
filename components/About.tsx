@@ -42,7 +42,7 @@ function About() {
             and the heart beat a little steadier.At <span className="text-[#456546] font-medium">Sahyadri Ventures</span>, we believe a home is more than a structure; it’s a space that reflects your story,
             your values, and your way of life. Every detail is carefully crafted to bring comfort, style, and functionality together.
           </p>
-          <Link href='/about' className='text-sm font-extralight my-2 inline-block bg-[#2f1414] p-2 rounded-sm text-white hover:scale-105 active:bg-[#533e3e] transition-all duration-200'>Read More</Link>
+          <Link href='/about' className='text-sm font-extralight my-2 inline-block bg-[#2f1414] px-5 py-3 rounded-sm text-white hover:scale-105 active:bg-[#533e3e] transition-all duration-200 font-[Poppins]'>Read More</Link>
         </div>
 
         {/* Image Section */}
